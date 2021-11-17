@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `db_retail`.`tbl_sale`.`tran_date` AS `tran_date`,dayofmonth(`db_retail`.`tbl_sale`.`tran_date`) AS `tgl`,sum(`db_retail`.`tbl_sale`.`grand_total`) AS `total` from `db_retail`.`tbl_sale` group by `db_retail`.`tbl_sale`.`tran_date`
+md5=228e749a306657643b251cd1eaeb4586
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2020-03-22 13:32:39
+create-version=1
+source=select `tbl_sale`.`tran_date` AS `tran_date`,dayofmonth(`tbl_sale`.`tran_date`) AS `tgl`,sum(`tbl_sale`.`grand_total`) AS `total` from `tbl_sale`  group by `tbl_sale`.`tran_date`
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_general_ci
+view_body_utf8=select `db_retail`.`tbl_sale`.`tran_date` AS `tran_date`,dayofmonth(`db_retail`.`tbl_sale`.`tran_date`) AS `tgl`,sum(`db_retail`.`tbl_sale`.`grand_total`) AS `total` from `db_retail`.`tbl_sale` group by `db_retail`.`tbl_sale`.`tran_date`
